@@ -1,0 +1,1500 @@
+@extends('layouts.app')
+@section('content')
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/products.css') }}">
+@endpush
+<!-- Hero Section -->
+    <section class="relative min-h-[40vh] sm:min-h-[50vh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20 bg-gradient-to-br from-dark via-gray-800 to-accent">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920')] bg-cover bg-center opacity-10"></div>
+        
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10 py-8 sm:py-12 text-center">
+            <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 animate-fade-up">
+               Products & <span class="text-blue-300">Solutions</span>
+            </h1>
+            <p class="text-sm xs:text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl mx-auto animate-fade-up animation-delay-200">
+                Explore our comprehensive range of industrial products from leading technology partners
+            </p>
+            
+            <!-- Breadcrumb -->
+            <div class="flex items-center justify-center space-x-2 mt-6 text-xs sm:text-sm text-gray-300 animate-fade-up animation-delay-400">
+                <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-white">Products & Solutions</span>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    <!-- Technology Partners Section -->
+    <section class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+            <!-- <div class="text-center mb-10 sm:mb-12 lg:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-3 sm:mb-4">
+                   Products & Solutions
+                </h2>
+                <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto mb-4 sm:mb-6"></div>
+                <p class="text-sm sm:text-base lg:text-lg text-textlight max-w-3xl mx-auto">
+                     Explore our comprehensive range of industrial products from leading technology partners
+                </p>
+            </div> -->
+
+            <!-- Partner 1: Asian Paints -->
+            <div class="mb-16 sm:mb-20 lg:mb-24">
+                <div class="bg-primary rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 mb-8">
+                    <div class="flex flex-col md:flex-row items-center gap-6 mb-8">
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 flex-shrink-0">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTop1tlJ0w7pgma3r3N7hQ9sPMM0XD3sXMsbA&s" 
+                                 alt="Asian Paints" class="w-full h-full object-contain">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-2">Asian Paints</h3>
+                            <p class="text-accent text-base sm:text-lg font-semibold mb-2">Industrial Coatings & Paint Solutions</p>
+                            <p class="text-sm sm:text-base text-textlight">
+                                India's largest paint company offering innovative coating solutions for industrial applications with advanced technology and superior quality.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Products Carousel -->
+                    <div class="relative products-carousel-wrapper">
+                        <h4 class="text-xl sm:text-2xl font-bold text-dark mb-6">Product Range</h4>
+                        
+                        <!-- Navigation Buttons (Desktop) -->
+                        <button class="carousel-btn carousel-btn-prev hidden lg:flex" data-carousel="asian-paints">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next hidden lg:flex" data-carousel="asian-paints">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Products Container -->
+                        <div class="products-carousel overflow-hidden" id="asian-paints">
+                            <div class="products-track flex gap-4 transition-transform duration-500">
+                                <!-- Product 1 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/protective-coating/infrastructure.jpg" 
+                                             alt="Infrastructure Protective Coatings" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Infrastructure Protective Coatings</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">High-performance Infrastructure Protective Coatings</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/protective-coating/infrastructure.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/protective-coating/oil-and-gas.jpg" 
+                                             alt="Oil & Gas" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Oil & Gas</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Durable Oil & Gas coating solutions</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/protective-coating/oil-and-gas.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/protective-coating/Oil-Gas-3.jpg" 
+                                             alt="Maintenance And Repair" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Maintenance And Repair</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Maintenance And Repair Protective Coatings</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/protective-coating/maintenance-and-repair.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/protective-coating/oem.jpg" 
+                                             alt="OEM" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">OEM Coating</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Asian Paints PPG offers innovative solutions for original equipment manufacturers.</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/protective-coating/oem.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 5 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/powder-coating/industrial.jpg" 
+                                             alt="Powder Coatings" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Industrial Powder Coatings</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Our extensive range of products comprising of Epoxy, Epoxy-Polyester, Polyester & Polyurethane</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/powder-coating/industrial.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 6 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/powder-coating/architectural.jpg" 
+                                             alt="Architectural" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Architectural Powder Coatings</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Heavy-duty Industrial Architectural Powder Coatings</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/powder-coating/architectural.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 7 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/powder-coating/functional.jpg" 
+                                             alt="Speciality Finishes" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Speciality Finishes</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Innovative technology solution for performance coatings.</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/powder-coating/speciality-finishes.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 8 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/protective-coating/floor-hero.jpg" 
+                                             alt="Floor Coatings" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Floor Coatings</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Specialized Floor Coatings Systems</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/floor-coating.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 9 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.asianpaintsppg.com/assets/images/industrial-coating/road-marking/hero-road-marking.jpg" 
+                                             alt="Traffic Solutions" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Traffic Solutions</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Traffic coating solutions</p>
+                                            <a href="https://www.asianpaintsppg.com/industrial-coating/road-marking.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Product 10 -->
+                                <!-- <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://coatingsystems.com/wp-content/uploads/2018/10/epoxy-coating-1-1200x675.jpg" 
+                                             alt="Industrial Enamels" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Industrial Enamels</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Premium quality industrial enamels</p>
+                                            <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                        </div>
+
+                        <!-- Mobile Swipe Indicator -->
+                        <div class="lg:hidden text-center mt-4 text-sm text-textlight">
+                            <i class="fas fa-hand-pointer"></i> Swipe to view more products
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partner 2: Superon -->
+            <div class="mb-16 sm:mb-20 lg:mb-24">
+                <div class="bg-primary rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 mb-8">
+                    <div class="flex flex-col md:flex-row items-center gap-6 mb-8">
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 flex-shrink-0">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlozP0GQwJLwcsGoEDMiI6mS23VLagpLpkwg&s" 
+                                 alt="Superon" class="w-full h-full object-contain">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-2">Superon</h3>
+                            <p class="text-accent text-base sm:text-lg font-semibold mb-2">Welding Solutions & Consumables</p>
+                            <p class="text-sm sm:text-base text-textlight">
+                                Premium quality welding electrodes and welding consumables for industrial applications with superior welding performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Products Carousel -->
+                    <div class="relative products-carousel-wrapper">
+                        <h4 class="text-xl sm:text-2xl font-bold text-dark mb-6">Product Range</h4>
+                        
+                        <button class="carousel-btn carousel-btn-prev hidden lg:flex" data-carousel="superon">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next hidden lg:flex" data-carousel="superon">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Products -> P1 -->
+                        <div class="products-carousel overflow-hidden" id="superon">
+                            <div class="products-track flex gap-4 transition-transform duration-500">
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/data/images/category/1684497327_6010.jpg" 
+                                             alt="Welding Electrodes" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Stick Electrodes </h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">High-quality welding electrodes</p>
+                                            <a href="https://www.superontechnik.com/stick-electrodes" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/data/images/category/1683702042_flux_cored_wires.jpg" 
+                                             alt="Welding Filler Wire" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Welding Filler Wire</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Premium Welding Filler Wire</p>
+                                            <a href="https://www.superontechnik.com/welding-filler-wire" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/inner_header_image/propreitary-maintenance-and-repair-welding-solutions_VkqifEK.jpg" 
+                                             alt="Maintenance & Repair" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Maintenance & Repair</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Professional Maintenance & Repair</p>
+                                            <a href="https://www.superontechnik.com/maintenance-and-repair" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/main_img/CD-Silver-Brazing-img-min.webp" 
+                                             alt="Flux Core Wires" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Brazing</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Advanced Brazing</p>
+                                            <a href="https://www.superontechnik.com/brazing" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/data/images/subcategory/productimage/EPQ-Wire.jpg" 
+                                             alt="Stainless Steel Wires" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Stainless Steel Wires</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Stainless Steel Wires</p>
+                                            <a href="https://www.superontechnik.com/stainless-steel-wires" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/main_img/cutoffwheel.jpg" 
+                                             alt="Abrasives" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Abrasives</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">High-performance Abrasives</p>
+                                            <a href="https://www.superontechnik.com/Abrasives" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/inner_header_image/dpt.jpg" 
+                                             alt="Welding Auxiliaries" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Welding Auxiliaries</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Premium Welding Auxiliaries</p>
+                                            <a href="https://www.superontechnik.com/welding-auxiliaries" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/main_img/gouging-carbons.jpg" 
+                                             alt="Cutting & Gouging" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Cutting & Gouging</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Specialized Cutting & Gouging</p>
+                                            <a href="https://www.superontechnik.com/cutting-and-gouging" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/main_img/Super-5.jpg" 
+                                             alt="Industrial Sprays" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Industrial Sprays</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Plastic safe, high di-electric strength cleaner, lubricant, moisture displacer, penetrant & corrosion inhibitor ,</p>
+                                            <a href="https://www.superontechnik.com/industrial-sprays" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.superontechnik.com/media/main_img/Synthetic-Greases-2.jpg" 
+                                             alt="Synthetic Greases" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Synthetic Greases</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Specialized Synthetic Greases</p>
+                                            <a href="https://www.superontechnik.com/synthetic-greases" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:hidden text-center mt-4 text-sm text-textlight">
+                            <i class="fas fa-hand-pointer"></i> Swipe to view more products
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partner 3: Ion Exchange -->
+            <div class="mb-16 sm:mb-20 lg:mb-24">
+                <div class="bg-primary rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 mb-8">
+                    <div class="flex flex-col md:flex-row items-center gap-6 mb-8">
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 flex-shrink-0">
+                            <img src="https://www.indianchemicalnews.com/public/thumbs/news/2025/12/28583/ION_Exchange_India_195_291.jpg" 
+                                 alt="Ion Exchange" class="w-full h-full object-contain">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-2">Ion Exchange</h3>
+                            <p class="text-accent text-base sm:text-lg font-semibold mb-2">Water Treatment & Environment Management</p>
+                            <p class="text-sm sm:text-base text-textlight">
+                                Comprehensive water and environment management solutions including STP, WTP, RO systems, and effluent treatment plants.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative products-carousel-wrapper">
+                        <h4 class="text-xl sm:text-2xl font-bold text-dark mb-6">Product Range</h4>
+                        
+                        <button class="carousel-btn carousel-btn-prev hidden lg:flex" data-carousel="ion-exchange">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next hidden lg:flex" data-carousel="ion-exchange">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="products-carousel overflow-hidden" id="ion-exchange">
+                            <div class="products-track flex gap-4 transition-transform duration-500">
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://media.istockphoto.com/id/1472824092/photo/aerial-view-of-modern-water-cleaning-facility-at-urban-wastewater-treatment-plant.jpg?s=612x612&w=0&k=20&c=o0yNiP_focHD67bBP2oeDQR3IPgYoeDqwCUUnshyBzE=" 
+                                             alt="Water Treatment" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Water Treatment</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Raw Water Treatment</br>Process Treatment</br>Post Treatment</br>Drinking Water Treatment</p>
+                                            <a href="https://ionexchangeglobal.com/products/engineering/water-treatment/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p2 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://ionexchangeglobal.com/app/uploads/2025/06/What-Are-the-Byproducts-of-Wastewater-Treatment-1024x537.jpg" 
+                                             alt="Waste Water Treatment" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Waste Water Treatment</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Waste Water Systems</br>
+Water Recycle</br>
+Zero Liquid Discharge</p>
+                                            <a href="https://ionexchangeglobal.com/products/engineering/solid-waste/waste-water-treatments/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- p3 -->
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.kelvinindia.in/blog/wp-content/uploads/2024/05/solid-waste-management.jpeg" 
+                                             alt="Solid Waste" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Solid Waste</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Sludge Dewatering</br>
+Waste To Energy </p>
+                                            
+                                            <a href="https://ionexchangeglobal.com/products/engineering/solid-wastes/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p4 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://img.freepik.com/free-vector/water-purification-technology-cartoon-set-with-cleaning-filtration-industrial-household-equipment-isolated-vector-illustration_1284-72928.jpg" 
+                                             alt="Process Separation & Purification" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Process Separation & Purification</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Ion Exchange Process</br>
+Membrane Process</br>
+Ion Exchange Membrane Process</p>
+                                            <a href="https://ionexchangeglobal.com/products/engineering/process-separation-and-purifications/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- p5 -->
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/376093785/PG/UH/VW/205541503/industrial-water-treatment-plant-model.jpg" 
+                                             alt="3D Modelling" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">3D Modelling</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">3D Modelling Water Treatment</p>
+                                            <a href="https://5.imimg.com/data5/SELLER/Default/2024/1/376093785/PG/UH/VW/205541503/industrial-water-treatment-plant-model.jpg" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80" 
+                                             alt="UF Systems" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">UF Systems</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Ultrafiltration membrane systems</p>
+                                            <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" 
+                                             alt="Water Softeners" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Water Softeners</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Industrial water softening systems</p>
+                                            <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" 
+                                             alt="ZLD Systems" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">ZLD Systems</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Zero liquid discharge solutions</p>
+                                            <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://chandra-asri.com/_next/image?url=https%3A%2F%2Fcomsite-s3.s3.ap-southeast-3.amazonaws.com%2F1237%2Fpengolahan-air-limbah.webp&w=3840&q=75" 
+                                             alt="Chemical Dosing" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Chemical Dosing</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Automated chemical dosing systems</p>
+                                            <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80" 
+                                             alt="Filtration Systems" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Filtration Systems</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Multi-stage filtration solutions</p>
+                                            <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="lg:hidden text-center mt-4 text-sm text-textlight">
+                            <i class="fas fa-hand-pointer"></i> Swipe to view more products
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partner 4: FirePro -->
+<div class="mb-16 sm:mb-20 lg:mb-24">
+    <div class="bg-primary rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 mb-8">
+        <div class="flex flex-col md:flex-row items-center gap-6 mb-8">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 flex-shrink-0">
+                <img src="https://www.firesafetysearch.com/wp-content/uploads/2019/01/FirePro-logo.gif" 
+                     alt="FirePro" class="w-full h-full object-contain">
+            </div>
+            <div class="text-center md:text-left flex-1">
+                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-2">FirePro</h3>
+                <p class="text-accent text-base sm:text-lg font-semibold mb-2">Fire Safety & Suppression Systems</p>
+                <!-- <p class="text-sm sm:text-base text-textlight">
+                    Advanced fire detection and suppression systems using cutting-edge aerosol technology for complete fire protection.
+                </p> -->
+            </div>
+            
+            <!-- Right side company buttons -->
+            <div class="flex flex-col sm:flex-row md:flex-col gap-3 w-full md:w-auto mt-4 md:mt-0">
+                <!-- Asha Enterprises Button -->
+                <a href="https://www.ashaenterprise.in/all-products/1" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="group relative bg-gradient-to-r from-blue-50 to-white rounded-lg sm:rounded-xl shadow-md hover:shadow-lg px-4 sm:px-5 py-3 sm:py-4 transition-all duration-300 hover:-translate-y-0.5 border border-blue-100">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <span class="text-dark font-bold text-sm sm:text-base md:text-lg block">Asha Enterprises</span>
+                            <span class="text-blue-600 text-xs sm:text-sm font-medium flex items-center gap-1 mt-0.5">
+                                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                                Visit website
+                            </span>
+                        </div>
+                        <div class="ml-2 sm:ml-3">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-500 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Fire Ban Button -->
+                <a href="https://www.fire-ban.com/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="group relative bg-gradient-to-r from-red-50 to-white rounded-lg sm:rounded-xl shadow-md hover:shadow-lg px-4 sm:px-5 py-3 sm:py-4 transition-all duration-300 hover:-translate-y-0.5 border border-red-100">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <span class="text-dark font-bold text-sm sm:text-base md:text-lg block">Fire Ban</span>
+                            <span class="text-red-600 text-xs sm:text-sm font-medium flex items-center gap-1 mt-0.5">
+                                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                                Visit website
+                            </span>
+                        </div>
+                        <div class="ml-2 sm:ml-3">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-500 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="relative products-carousel-wrapper">
+            <h4 class="text-xl sm:text-2xl font-bold text-dark mb-6">Product Range</h4>
+            
+            <button class="carousel-btn carousel-btn-prev hidden lg:flex" data-carousel="firepro">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next hidden lg:flex" data-carousel="firepro">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="products-carousel overflow-hidden" id="firepro">
+                <div class="products-track flex gap-4 transition-transform duration-500">
+                    <!-- Product cards remain the same -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://productimages.withfloats.com/tile/685d198b1228184bbf84c12f.png" 
+                                 alt="FireBan Fire Thermal Camera" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">FireBan Fire Thermal Camera</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Advanced FireBan Thermal Camera</p>
+                                <a href="https://www.ashaenterprise.in/products/category/fireban-products/1" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://productimages.withfloats.com/tile/68087103443303040d464b9e.jpg" 
+                                             alt="Inert Gas Fire Suppression System" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Inert Gas Fire Suppression System</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Inert Gas Fire suppression systems</p>
+                                            <a href="https://www.ashaenterprise.in/products/category/inert-gas-fire-suppression-system/1" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://productimages.withfloats.com/tile/680872fd5479e9de3e7a21d0.png" 
+                                             alt="Cylinder Less Tube Based Fire Detection System" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Cylinder Less Tube Based Fire Detection Systems</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Eco-friendly Cylinder Fire Detection System</p>
+                                            <a href="https://www.ashaenterprise.in/products/category/cylinder-less-tube-based-fire-detection-system/1" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p4 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://productimages.withfloats.com/tile/6808741d7e6af3b89a9fb78f.jpg" 
+                                             alt="Nitrogen Injection Fire Protection System" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Nitrogen Injection Fire Protection System</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Intelligent Nitrogen Injection Fire Protection System</p>
+                                            <a href="https://www.ashaenterprise.in/products/category/nitrogen-injection-fire-protection-system/1" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p5 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://productimages.withfloats.com/tile/680767c9c74698448a329ba4.jpg" 
+                                             alt="co2 flooding system" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">co2 flooding system</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Advanced co2 flooding system</p>
+                                            <a href="https://www.ashaenterprise.in/products/category/co2-flooding-system/1t" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p6 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.thumbsfrog.com/1050416/product/thumb/kitchen-fire-suppression-systems-1751525566.jpg" 
+                                             alt="Kitchen Fire Suppression Systems" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Kitchen Fire Suppression Systems</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Multi-gas detection systems</p>
+                                            <a href="https://www.fire-ban.com/products/kitchen-fire-suppression-system.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p7 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.thumbsfrog.com/1050416/product/dual-agent-retardant-fire-suppression-system-1720250560.jpg" 
+                                             alt="Vehicle Fire Protection" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Vehicle Fire Protection</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Vehicle Fire ProtectionSystem Multi Methods</p>
+                                            <a href="https://www.fire-ban.com/products/vehicle-fire-protection.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p8 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.thumbsfrog.com/1050416/product/thumb/bus-fire-system-172812500811050416.png" 
+                                             alt="Bus Fire System" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Bus Fire System</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Portable Bus Fire System</p>
+                                            <a href="https://www.fire-ban.com/products/bus-fire-system.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- p9 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.thumbsfrog.com/1050416/product/thumb/mining-fire-system-172812611611050416.PNG" 
+                                             alt="Mining Fire System" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Mining Fire System</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Emergency Mining Fire System</p>
+                                            <a href="https://www.fire-ban.com/products/mining-fire-system.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- p10 -->
+                                <div class="product-card flex-shrink-0">
+                                    <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                                        <img src="https://www.thumbsfrog.com/1050416/product/fire-detection-fire-alarm-system-1751529429.jpg" 
+                                             alt="Fire System" class="w-full h-40 sm:h-48 object-cover">
+                                        <div class="p-4">
+                                            <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Fire Alarms And Detection Systems</h5>
+                                            <p class="text-xs sm:text-sm text-textlight mb-3">Emergency Fire Alarms And Detection Systems</p>
+                                            <a href="https://www.fire-ban.com/products/fire-alarms-and-detection-systems.html" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                                <span>Learn More</span>
+                                                <i class="fas fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:hidden text-center mt-4 text-sm text-textlight">
+                            <i class="fas fa-hand-pointer"></i> Swipe to view more products
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partner 5: Stanvac Chemicals -->
+<div class="mb-16 sm:mb-20 lg:mb-24">
+    <div class="bg-primary rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 mb-8">
+        <div class="flex flex-col md:flex-row items-center gap-6 mb-8">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 flex-shrink-0">
+                <img src="https://mkpower.in/wp-content/uploads/2024/07/Stanvac-Chemicals-1.jpg" 
+                     alt="Aerosol Sprays
+" class="w-full h-full object-contain">
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-2">Stanvac Chemicals</h3>
+                <p class="text-accent text-base sm:text-lg font-semibold mb-2">Specialty Chemicals & Industrial Coatings</p>
+                <p class="text-sm sm:text-base text-textlight">
+                    Leading manufacturer of specialty chemicals, industrial coatings, and advanced chemical solutions for various industrial applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative products-carousel-wrapper">
+            <h4 class="text-xl sm:text-2xl font-bold text-dark mb-6">Product Range</h4>
+            
+            <button class="carousel-btn carousel-btn-prev hidden lg:flex" data-carousel="stanvac">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next hidden lg:flex" data-carousel="stanvac">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="products-carousel overflow-hidden" id="stanvac">
+                <div class="products-track flex gap-4 transition-transform duration-500">
+                    <!-- Product 1 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/aerosol-sprays-img.jpg" 
+                                 alt="Aerosol Sprays" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Aerosol Sprays</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Aerosol Sprays are gaseous suspension system</p>
+                                <a href="https://www.stanvac.com/products/aerosol-sprays" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Super-Hydrophobic-Anti-.jpg" 
+                                 alt="Super Hydrophobic Anti Corrosion" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Super Hydrophobic Anti Corrosion</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Anti-corrosion coatings shield metal parts against deterioration due to exposure to various industrial</p>
+                                <a href="https://www.stanvac.com/products/super-hydrophobic-anti-corrosion" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Bulk-Electrical-Insulation.jpg" 
+                                 alt="Electrical Insulation" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Electrical Insulation</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Advanced Electrical Insulation</p>
+                                <a href="https://www.stanvac.com/products/bulk-electrical-insulation" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Synthetic-Greases.jpg" 
+                                 alt="Synthetic Greases" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Synthetic Greases</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Synthetic oils are produced under controlled reactions to obtain high oxidation and thermal stability, </p>
+                                <a href="https://www.stanvac.com/products/synthetic-greases" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Ceramic-Coatings-Putties.jpg" 
+                                 alt="Ceramic Coatings & Putties" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Ceramic Coatings & Putties</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">The Ceramic Repair Putty or Ceramic Coating is suitable for rebuilding </p>
+                                <a href="https://www.stanvac.com/products/ceramic-coatings-putties" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Product 6 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Passive.jpg" 
+                                 alt="Passive Fire Protection" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Passive Fire Protection</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">High-performance Passive Fire Protection</p>
+                                <a href="https://www.stanvac.com/products/passive-fire-protection" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Maintenance-Welding-Electrodes.jpg" 
+                                 alt="Maintenance Welding Electrodes" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Maintenance Welding Electrodes</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">The welding electrode is used to join a variety of materials</p>
+                                <a href="https://www.stanvac.com/products/maintenance-welding-electrodes" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/Concrete-Protection.jpg" 
+                                 alt="Concrete Protection" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Concrete Protection</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Concrete additives and repair chemicals</p>
+                                <a href="https://www.stanvac.com/products/concrete-protection" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/assets/images/HT-LT-Joint-Protection-Power.jpg" 
+                                 alt="Concrete Solutions" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">HT & LT Joint Protection & Power Loss Prevention</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3"></p>
+                                <a href="https://www.stanvac.com/products/ht-lt-joint-protection-power-loss-prevention" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <!-- <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.stanvac.com/static/media/3.fdb477be7b4e2b4d9b48.png" 
+                                 alt="Fuel Additives" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Fuel Additives</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Specialty fuel treatment chemicals</p>
+                                <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="lg:hidden text-center mt-4 text-sm text-textlight">
+                <i class="fas fa-hand-pointer"></i> Swipe to view more products
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Partner 6: JASIC India -->
+<div class="mb-16 sm:mb-20 lg:mb-24">
+    <div class="bg-primary rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 mb-8">
+        <div class="flex flex-col md:flex-row items-center gap-6 mb-8">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 flex-shrink-0">
+                <img src="https://i.pinimg.com/736x/97/ae/8b/97ae8b217d2fe758bdb1f129d754d605.jpg" 
+                     alt="JASIC India" class="w-full h-full object-contain">
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-2">JASIC India</h3>
+                <p class="text-accent text-base sm:text-lg font-semibold mb-2">Welding Equipment & Machinery</p>
+                <p class="text-sm sm:text-base text-textlight">
+                    High-quality welding equipment, welding machines, and industrial welding solutions for professional and industrial applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative products-carousel-wrapper">
+            <h4 class="text-xl sm:text-2xl font-bold text-dark mb-6">Product Range</h4>
+            
+            <button class="carousel-btn carousel-btn-prev hidden lg:flex" data-carousel="jasic">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next hidden lg:flex" data-carousel="jasic">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="products-carousel overflow-hidden" id="jasic">
+                <div class="products-track flex gap-4 transition-transform duration-500">
+                    <!-- Product 1 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.jasictech.com/wp-content/uploads/2025/12/jasic-evo20-3ph-mig-welder-2-1.jpg" 
+                                 alt="Welding Machines" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Processes Welding Machine's</h5>
+                           
+                                <p class="text-xs sm:text-sm text-textlight mb-3">MIG
+TIG</br>
+MMA</br>
+CUT</br>
+Handheld Laser</p>
+                                <a href="https://www.jasictech.com/products/filter/product_cat:mig/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.jasictech.com/wp-content/uploads/2025/06/jasic-evo20-3phase-welding-machine-4-460x460.jpg" 
+                                 alt="Ranges" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Ranges</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">EVO20 3PH</br>
+                             
+EVO20 1PH</br>
+EVOLVE 3PH</br>
+EVOLVE 1PH</br>
+PRO</p>
+                                <a href="https://www.jasictech.com/evo20-3phase-welding-machine/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.jasictech.com/wp-content/uploads/2024/07/js-500a-mig-welding-torch-product-image-600x600.jpg" 
+                                 alt="PPE & Accessories" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">PPE & Accessories</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">TMIG Torch</br>
+                             
+TIG Torch</br>
+Plasma CUT Torch</br>
+Welding Helmet</p>
+                                <a href="https://www.jasictech.com/products/filter/product_cat:mig-welding-torch/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.jasictech.com/wp-content/uploads/2025/06/evo20-remote-control-helmetMRC-09-600x600.jpg" 
+                                 alt="Welding Helmet" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Welding Helmet</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Welding Helmet-Accessories Parts</p>
+                                <a href="https://www.jasictech.com/products/filter/product_cat:welding-helmet/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://www.jasictech.com/wp-content/uploads/2024/07/self-shielded-flux-cored-welding-wire-product-image-2-600x600.jpg" 
+                                 alt="Consumables" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Consumables Steel Consumables</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Carbon Steel Consumables</br>
+                                
+Stainless Steel Consumables</br>
+Aluminium Consumables</p>
+                                <a href="https://www.jasictech.com/products/filter/product_cat:carbon-steel-consumables/" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <!-- <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://jasicindia.com/wp-content/uploads/2023/10/Welding-Guns-400x400.jpg" 
+                                 alt="Welding Guns" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Welding Guns</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">MIG/MAG welding guns and torches</p>
+                                <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Product 7 -->
+                    <!-- <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://jasicindia.com/wp-content/uploads/2023/10/Welding-Helmet-400x400.jpg" 
+                                 alt="Welding Helmets" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Welding Helmets</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Auto-darkening welding helmets</p>
+                                <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Product 8 -->
+                    <!-- <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://jasicindia.com/wp-content/uploads/2023/10/Welding-Gloves-400x400.jpg" 
+                                 alt="Welding Safety Gear" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Welding Safety Gear</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Complete welding safety equipment</p>
+                                <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Product 9 -->
+                    <!-- <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://jasicindia.com/wp-content/uploads/2023/10/Inverter-Welding-Machine-400x400.jpg" 
+                                 alt="Inverter Welders" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Inverter Welders</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Energy efficient inverter welding machines</p>
+                                <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Product 10 -->
+                    <!-- <div class="product-card flex-shrink-0">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                            <img src="https://jasicindia.com/wp-content/uploads/2023/10/Arc-Welding-Machine-400x400.jpg" 
+                                 alt="Arc Welders" class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4">
+                                <h5 class="font-bold text-dark mb-2 text-sm sm:text-base">Arc Welders</h5>
+                                <p class="text-xs sm:text-sm text-textlight mb-3">Arc welding machines and equipment</p>
+                                <a href="#contact" class="text-accent hover:text-blue-600 text-xs sm:text-sm font-semibold flex items-center gap-1">
+                                    <span>Learn More</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="lg:hidden text-center mt-4 text-sm text-textlight">
+                <i class="fas fa-hand-pointer"></i> Swipe to view more products
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Additional Content Section -->
+            <div class="mt-10 sm:mt-12 lg:mt-16 bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                            <i class="fas fa-check-circle text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-dark mb-2 sm:mb-3">Quality Assurance</h3>
+                        <p class="text-xs sm:text-sm text-textlight">
+                            All our services adhere to international quality standards with thorough testing and inspection at every stage.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                            <i class="fas fa-clock text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-dark mb-2 sm:mb-3">Timely Delivery</h3>
+                        <p class="text-xs sm:text-sm text-textlight">
+                            We understand the importance of timelines in industrial projects and ensure on-time delivery of all services.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center sm:col-span-2 lg:col-span-1">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                            <i class="fas fa-headset text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-dark mb-2 sm:mb-3">24/7 Support</h3>
+                        <p class="text-xs sm:text-sm text-textlight">
+                            Round-the-clock technical support and emergency services to ensure minimal downtime for your operations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-200">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark mb-3 sm:mb-4">Need Customized Solutions?</h3>
+                    <p class="text-xs sm:text-sm text-textlight mb-4 sm:mb-6 max-w-2xl mx-auto px-4">
+                        We specialize in providing customized industrial solutions tailored to your specific requirements. 
+                        Contact us for a free consultation.
+                    </p>
+                    <a href="#contact" 
+                       class="inline-flex items-center space-x-2 bg-accent hover:bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-xl text-sm sm:text-base">
+                        <!-- <i class="fas fa-phone"></i> -->
+                        <span>Get a Free Consultation</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- Contact Section -->
+    <section id="contact" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+            <div class="text-center mb-10 sm:mb-12 lg:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-3 sm:mb-4">Contact Us</h2>
+                <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto mb-4 sm:mb-6"></div>
+                <p class="text-sm sm:text-base lg:text-lg text-textlight max-w-3xl mx-auto px-4">Get in touch with us for your industrial needs</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-6 sm:gap-8">
+                <!-- Contact Information -->
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark mb-2">Phone</h3>
+                                <p class="text-sm sm:text-base text-textlight mb-1">
+                                    <a href="tel:+919460476041" class="hover:text-accent transition-colors">+91-9460476041</a>
+                                </p>
+                                <p class="text-sm sm:text-base text-textlight">
+                                    <a href="tel:+918690406041" class="hover:text-accent transition-colors">+91-8690406041</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark mb-2">Email</h3>
+                                <p class="text-sm sm:text-base text-textlight mb-1 break-words">
+                                    <a href="mailto:techsure2020@gmail.com" class="hover:text-accent transition-colors">
+                                        techsure2020@gmail.com
+                                    </a>
+                                </p>
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark mb-2">Office Address</h3>
+                                <p class="text-sm sm:text-base text-textlight mb-1">S-85, Block-4, Ambe Market</p>
+                                <p class="text-sm sm:text-base text-textlight">Chittorgarh, Rajasthan – 312001</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Small Map -->
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="p-3 sm:p-4">
+                            <h3 class="text-lg sm:text-xl font-bold text-dark mb-3 sm:mb-4">Our Location</h3>
+                            <div class="h-48 sm:h-56 lg:h-64 rounded-lg overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5396723766584!2d74.62719!3d24.88012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzQ4LjQiTiA3NMKwMzcnMzcuOSJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark mb-4 sm:mb-6">Send us a Message</h3>
+                    
+                    <form id="contact-form" class="space-y-4 sm:space-y-6">
+                        <div>
+                            <label for="name" class="block text-dark font-medium mb-2 text-sm sm:text-base">Full Name *</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="name" 
+                                   required 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your full name">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-dark font-medium mb-2 text-sm sm:text-base">Email Address *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   required 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your email address">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-dark font-medium mb-2 text-sm sm:text-base">Phone Number *</label>
+                            <input type="tel" 
+                                   id="phone" 
+                                   name="phone" 
+                                   required 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-dark font-medium mb-2 text-sm sm:text-base">Company Name</label>
+                            <input type="text" 
+                                   id="company" 
+                                   name="company" 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your company name">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-dark font-medium mb-2 text-sm sm:text-base">Message *</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      rows="4" 
+                                      required 
+                                      class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 resize-none text-sm sm:text-base"
+                                      placeholder="Enter your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-accent hover:bg-blue-600 text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-lg transition-all duration-300 hover:shadow-xl flex items-center justify-center space-x-2 text-sm sm:text-base">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                        
+                        <div id="form-message" class="hidden p-3 sm:p-4 rounded-lg text-center text-sm sm:text-base"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+@push('scripts')
+<script src="{{ asset('js/products.js') }}"></script>
+@endpush
+@endsection

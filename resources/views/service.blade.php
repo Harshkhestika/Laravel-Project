@@ -1,0 +1,771 @@
+@extends('layouts.app')
+@section('content')
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/services.css') }}">
+@endpush
+    <!-- Hero Section -->
+    <section class="relative min-h-[40vh] sm:min-h-[50vh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20 bg-gradient-to-br from-dark via-gray-800 to-accent">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920')] bg-cover bg-center opacity-10"></div>
+        
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10 py-8 sm:py-12 text-center">
+            <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 animate-fade-up">
+                Our Services & <span class="text-blue-300">Partner Companies</span>
+            </h1>
+            <p class="text-sm xs:text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl mx-auto animate-fade-up animation-delay-200">
+                Collaborating with world-class companies to deliver exceptional industrial solutions
+            </p>
+            
+            <!-- Breadcrumb -->
+            <div class="flex items-center justify-center space-x-2 mt-6 text-xs sm:text-sm text-gray-300 animate-fade-up animation-delay-400">
+                <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-white">Services & Partners</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Partner Companies -->
+    <section id="services" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+            <!-- Section 1: Industrial Coatings & Paints -->
+            <div class="mb-16 sm:mb-20 lg:mb-24" id="coatings">
+                <div class="text-center mb-10 sm:mb-12">
+                    
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-3 sm:mb-4">Industrial Coatings & Paints</h2>
+                    <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto mb-4"></div>
+                    <p class="text-sm sm:text-base text-textlight max-w-3xl mx-auto">
+                        Premium quality protective coatings and industrial paints for corrosion protection and surface finishing
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+                    <!-- Asian Paints -->
+                    <div class="partner-card bg-primary rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
+                            <img src="https://www.asianpaintsppg.com/assets/images/homepage/protective-coating.jpg" 
+                                 alt="Asian Paints Coating" 
+                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                <span class="text-accent font-semibold text-xs sm:text-sm">Premium Partner</span>
+                            </div>
+                        </div>
+                        <div class="p-4 sm:p-6 lg:p-8">
+                            <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex items-center justify-center p-3 shadow-md flex-shrink-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTop1tlJ0w7pgma3r3N7hQ9sPMM0XD3sXMsbA&s" 
+                                         alt="Asian Paints Logo" 
+                                         class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-dark">Asian Paints</h3>
+                                    <p class="text-accent text-sm sm:text-base">Industrial Coatings Division</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-sm sm:text-base text-textlight mb-4 sm:mb-6 leading-relaxed">
+                                Asian Paints is India's largest and Asia's third-largest paint company, with a consolidated turnover of ₹329.03 billion. 
+                                Their Industrial Coatings division offers high-performance protective coatings, epoxy systems, and specialized solutions 
+                                for cement, power, and process industries.
+                            </p>
+                            
+                            <div class="bg-white rounded-lg p-4 mb-4 sm:mb-6">
+                                <h4 class="font-bold text-dark mb-3 text-sm sm:text-base">Key Products & Services:</h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-textlight">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>High-build epoxy coatings for tanks and equipment</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Polyurethane topcoats for weathering protection</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Heat-resistant coatings (up to 650°C)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Floor coating systems and anti-skid finishes</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Zinc-rich primers and corrosion protection</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex flex-col xs:flex-row gap-3">
+                                <a href="https://www.asianpaintsppg.com/" 
+                                   target="_blank"
+                                   class="flex-1 bg-accent hover:bg-blue-600 text-white px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Website</span>
+                                </a>
+                                <a href="#contact" 
+                                   class="flex-1 bg-white hover:bg-gray-50 border-2 border-accent text-accent px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Get Quote</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stanvac -->
+                    <div class="partner-card bg-primary rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
+                            <img src="https://stanvac.com/assets/images/contact-header.jpg" 
+                                 alt="Stanvac Chemicals" 
+                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                <span class="text-accent font-semibold text-xs sm:text-sm">Authorized Dealer</span>
+                            </div>
+                        </div>
+                        <div class="p-4 sm:p-6 lg:p-8">
+                            <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex items-center justify-center p-3 shadow-md flex-shrink-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSt6YM5rEmRCo1cX8Bi91i_Bys-v72FkRMnA&s" 
+                                         alt="Stanvac Logo" 
+                                         class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-dark">Stanvac</h3>
+                                    <p class="text-accent text-sm sm:text-base">Specialty Chemicals</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-sm sm:text-base text-textlight mb-4 sm:mb-6 leading-relaxed">
+                                Stanvac is a leading manufacturer of specialty chemicals and industrial coatings with over 30 years of experience. 
+                                They provide innovative solutions for surface preparation, corrosion protection, and maintenance coatings specifically 
+                                designed for heavy industries.
+                            </p>
+                            
+                            <div class="bg-white rounded-lg p-4 mb-4 sm:mb-6">
+                                <h4 class="font-bold text-dark mb-3 text-sm sm:text-base">Key Products & Services:</h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-textlight">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Chemical-resistant epoxy coatings</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Tank lining and containment solutions</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Rust converters and primers</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Water-based industrial coatings</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Surface preparation chemicals</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex flex-col xs:flex-row gap-3">
+                                <a href="https://www.stanvac.com/" 
+                                   target="_blank"
+                                   class="flex-1 bg-accent hover:bg-blue-600 text-white px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Website</span>
+                                </a>
+                                <a href="#contact" 
+                                   class="flex-1 bg-white hover:bg-gray-50 border-2 border-accent text-accent px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Get Quote</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Welding Solutions -->
+            <div class="mb-16 sm:mb-20 lg:mb-24" id="welding">
+                <div class="text-center mb-10 sm:mb-12">
+                    
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-3 sm:mb-4">Welding Solutions & Equipment</h2>
+                    <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-red-500 to-orange-400 mx-auto mb-4"></div>
+                    <p class="text-sm sm:text-base text-textlight max-w-3xl mx-auto">
+                        Comprehensive welding consumables, equipment, and accessories for all industrial applications
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+                    <!-- Superon -->
+                    <div class="partner-card bg-primary rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
+                            <img src="https://superonindustries.com/data/images/category/1684497327_6010.jpg" 
+                                 alt="Superon Welding" 
+                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                <span class="text-red-500 font-semibold text-xs sm:text-sm">Certified Partner</span>
+                            </div>
+                        </div>
+                        <div class="p-4 sm:p-6 lg:p-8">
+                            <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex items-center justify-center p-3 shadow-md flex-shrink-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlozP0GQwJLwcsGoEDMiI6mS23VLagpLpkwg&s" 
+                                         alt="Superon Logo" 
+                                         class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-dark">Superon</h3>
+                                    <p class="text-red-500 text-sm sm:text-base">Welding Electrodes</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-sm sm:text-base text-textlight mb-4 sm:mb-6 leading-relaxed">
+                                Superon is one of India's most trusted brands in welding consumables, manufacturing premium quality welding electrodes 
+                                since 1983. Their products are known for superior arc stability, low spatter, and excellent weld quality, making them 
+                                the preferred choice for industrial welding applications.
+                            </p>
+                            
+                            <div class="bg-white rounded-lg p-4 mb-4 sm:mb-6">
+                                <h4 class="font-bold text-dark mb-3 text-sm sm:text-base">Key Products & Services:</h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-textlight">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Arc welding electrodes (E6013, E7018, E7016)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Stainless steel welding electrodes</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Cast iron and hardfacing electrodes</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>MIG/TIG welding wires</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Special purpose welding consumables</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex flex-col xs:flex-row gap-3">
+                                <a href="https://www.superontechnik.com/" 
+                                   target="_blank"
+                                   class="flex-1 bg-red-500 hover:bg-red-600 text-white px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Website</span>
+                                </a>
+                                <a href="#contact" 
+                                   class="flex-1 bg-white hover:bg-gray-50 border-2 border-red-500 text-red-500 px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Get Quote</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JASIC India -->
+                    <div class="partner-card bg-primary rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
+                            <img src="https://www.jasictech.com/wp-content/uploads/2024/11/jasic-evo20-professional-welding-machines-featured-cover.jpg" 
+                                 alt="JASIC Welding Equipment" 
+                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                <span class="text-red-500 font-semibold text-xs sm:text-sm">Authorized Dealer</span>
+                            </div>
+                        </div>
+                        <div class="p-4 sm:p-6 lg:p-8">
+                            <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex items-center justify-center p-3 shadow-md flex-shrink-0">
+                                    <img src="https://www.sammaparts.com/img/m/28.jpg" 
+                                         alt="JASIC Logo" 
+                                         class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-dark">JASIC India</h3>
+                                    <p class="text-red-500 text-sm sm:text-base">Welding Equipment</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-sm sm:text-base text-textlight mb-4 sm:mb-6 leading-relaxed">
+                                JASIC is a globally recognized manufacturer of inverter-based welding equipment, providing cutting-edge technology 
+                                and reliable performance. Their machines are known for energy efficiency, portability, and advanced features, 
+                                serving industries from construction to heavy manufacturing.
+                            </p>
+                            
+                            <div class="bg-white rounded-lg p-4 mb-4 sm:mb-6">
+                                <h4 class="font-bold text-dark mb-3 text-sm sm:text-base">Key Products & Services:</h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-textlight">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Inverter welding machines (MMA/SMAW)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>MIG/MAG welding equipment</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>TIG/GTAW welding machines</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Plasma cutting systems</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                        <span>Welding accessories and spares</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex flex-col xs:flex-row gap-3">
+                                <a href="https://www.jasictech.com/" 
+                                   target="_blank"
+                                   class="flex-1 bg-red-500 hover:bg-red-600 text-white px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Website</span>
+                                </a>
+                                <a href="#contact" 
+                                   class="flex-1 bg-white hover:bg-gray-50 border-2 border-red-500 text-red-500 px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Get Quote</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Water Treatment Solutions -->
+            <div class="mb-16 sm:mb-20 lg:mb-24" id="water-treatment">
+                <div class="text-center mb-10 sm:mb-12">
+                    
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-3 sm:mb-4">Water Treatment Solutions</h2>
+                    <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-4"></div>
+                    <p class="text-sm sm:text-base text-textlight max-w-3xl mx-auto">
+                        Advanced water and environment management solutions for industrial and municipal applications
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-1 gap-6 sm:gap-8">
+                    <!-- Ion Exchange -->
+                    <div class="partner-card bg-primary rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                        <div class="grid md:grid-cols-2 gap-0">
+                            <div class="relative h-64 sm:h-80 md:h-full overflow-hidden">
+                                <img src="https://bd.ionexchangeglobal.com/wp-content/uploads/2024/02/IMG_20170108_153948-2-1-1024x768.jpg" 
+                                     alt="Ion Exchange Water Treatment" 
+                                     class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                                <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                    <span class="text-blue-500 font-semibold text-xs sm:text-sm">Premium Partner</span>
+                                </div>
+                            </div>
+                            <div class="p-4 sm:p-6 lg:p-8">
+                                <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex items-center justify-center p-3 shadow-md flex-shrink-0">
+                                        <img src="https://www.indianchemicalnews.com/public/thumbs/news/2025/12/28583/ION_Exchange_India_195_291.jpg" 
+                                             alt="Ion Exchange Logo" 
+                                             class="w-full h-full object-contain">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl sm:text-2xl font-bold text-dark">Ion Exchange</h3>
+                                        <p class="text-blue-500 text-sm sm:text-base">Water & Environment Management</p>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm sm:text-base text-textlight mb-4 sm:mb-6 leading-relaxed">
+                                    Ion Exchange is India's pioneering company in water and environment management solutions with over 60 years of experience. 
+                                    They offer comprehensive solutions including water treatment, wastewater treatment, desalination, zero liquid discharge (ZLD), 
+                                    and specialty chemicals for industrial and municipal sectors.
+                                </p>
+                                
+                                <div class="bg-white rounded-lg p-4 mb-4 sm:mb-6">
+                                    <h4 class="font-bold text-dark mb-3 text-sm sm:text-base">Key Products & Services:</h4>
+                                    <ul class="space-y-2 text-xs sm:text-sm text-textlight">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                            <span>Sewage Treatment Plants (STP) & Effluent Treatment Plants (ETP)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                            <span>Water Treatment Plants (WTP) & Reverse Osmosis (RO) Systems</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                            <span>Zero Liquid Discharge (ZLD) solutions</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                            <span>Demineralization and deionization systems</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                            <span>Industrial water softeners and filtration</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                            <span>Water treatment chemicals and consumables</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="flex flex-col xs:flex-row gap-3">
+                                    <a href="https://ionexchangeglobal.com/" 
+                                       target="_blank"
+                                       class="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Visit Website</span>
+                                    </a>
+                                    <a href="#contact" 
+                                       class="flex-1 bg-white hover:bg-gray-50 border-2 border-blue-500 text-blue-500 px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                                        <i class="fas fa-phone"></i>
+                                        <span>Get Quote</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Fire Safety Solutions -->
+<div class="mb-16 sm:mb-20 lg:mb-24" id="fire-safety">
+    <div class="text-center mb-10 sm:mb-12">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-3 sm:mb-4">Fire Safety & Protection</h2>
+        <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-orange-500 to-red-400 mx-auto mb-4"></div>
+        <p class="text-sm sm:text-base text-textlight max-w-3xl mx-auto">
+            Advanced fire detection, suppression systems, and safety equipment for industrial applications
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-1 gap-6 sm:gap-8">
+        <!-- FirePro -->
+        <div class="partner-card bg-primary rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="grid md:grid-cols-2 gap-0">
+                <div class="relative h-64 sm:h-80 md:h-full overflow-hidden md:order-2">
+                    <img src="https://www.firepro.com/wp-content/uploads/2024/05/intersec-2024-meta.jpeg" 
+                         alt="FirePro Systems" 
+                         class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                        <span class="text-orange-500 font-semibold text-xs sm:text-sm">Certified Partner</span>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 lg:p-8 md:order-1">
+                    <div class="flex items-center space-x-4 mb-4 sm:mb-6">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex items-center justify-center p-3 shadow-md flex-shrink-0">
+                            <img src="https://www.firesafetysearch.com/wp-content/uploads/2019/01/FirePro-logo.gif" 
+                                 alt="FirePro Logo" 
+                                 class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-dark">FirePro</h3>
+                            <p class="text-orange-500 text-sm sm:text-base">Fire Suppression Systems</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm sm:text-base text-textlight mb-4 sm:mb-6 leading-relaxed">
+                        FirePro is a world-leading manufacturer of condensed aerosol fire suppression systems, offering cutting-edge technology 
+                        for fire protection. Their eco-friendly solutions are installed in over 100 countries, protecting industrial facilities, 
+                        data centers, power plants, and marine applications with minimal environmental impact.
+                    </p>
+                    
+                    <div class="bg-white rounded-lg p-4 mb-4 sm:mb-6">
+                        <h4 class="font-bold text-dark mb-3 text-sm sm:text-base">Key Products & Services:</h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-textlight">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Condensed aerosol fire suppression generators</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Automatic fire detection and alarm systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span>CO2 and clean agent suppression systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Fire extinguishers and safety equipment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Personal protective equipment (PPE)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Fire safety audits and consulting</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Company Links Section -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 sm:mb-6">
+                        <!-- Asha Enterprises Link -->
+                        <a href="https://www.fireprotectionsystem.co.in/" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="group relative bg-gradient-to-r from-blue-50 to-white rounded-lg shadow-md hover:shadow-lg px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 border border-blue-100">
+                            <div class="flex items-center justify-between">
+                                <div class="text-left">
+                                    <span class="text-dark font-bold text-sm sm:text-base block">Asha Enterprises</span>
+                                    <span class="text-blue-600 text-xs sm:text-sm font-medium flex items-center gap-1 mt-0.5">
+                                        <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                        Visit website
+                                    </span>
+                                </div>
+                                <div class="ml-2 sm:ml-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-500 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Fire Ban Link -->
+                        <a href="https://www.fire-ban.com/products/fire-alarms-and-detection-systems.html" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="group relative bg-gradient-to-r from-red-50 to-white rounded-lg shadow-md hover:shadow-lg px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 border border-red-100">
+                            <div class="flex items-center justify-between">
+                                <div class="text-left">
+                                    <span class="text-dark font-bold text-sm sm:text-base block">Fire Ban</span>
+                                    <span class="text-red-600 text-xs sm:text-sm font-medium flex items-center gap-1 mt-0.5">
+                                        <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                        Visit website
+                                    </span>
+                                </div>
+                                <div class="ml-2 sm:ml-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-500 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-col xs:flex-row gap-3">
+                        <!-- <a href="https://www.firepro.com" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center space-x-2 text-sm sm:text-base">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit FirePro Website</span>
+                        </a> -->
+                        <a href="#contact" 
+                           class="flex-1 bg-white hover:bg-gray-50 border-2 border-orange-500 text-orange-500 px-4 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                            <i class="fas fa-phone"></i>
+                            <span>Get Quote</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Additional Content Section -->
+            <div class="mt-10 sm:mt-12 lg:mt-16 bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                            <i class="fas fa-check-circle text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-dark mb-2 sm:mb-3">Quality Assurance</h3>
+                        <p class="text-xs sm:text-sm text-textlight">
+                            All our services adhere to international quality standards with thorough testing and inspection at every stage.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                            <i class="fas fa-clock text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-dark mb-2 sm:mb-3">Timely Delivery</h3>
+                        <p class="text-xs sm:text-sm text-textlight">
+                            We understand the importance of timelines in industrial projects and ensure on-time delivery of all services.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center sm:col-span-2 lg:col-span-1">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                            <i class="fas fa-headset text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-dark mb-2 sm:mb-3">24/7 Support</h3>
+                        <p class="text-xs sm:text-sm text-textlight">
+                            Round-the-clock technical support and emergency services to ensure minimal downtime for your operations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-200">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark mb-3 sm:mb-4">Need Customized Solutions?</h3>
+                    <p class="text-xs sm:text-sm text-textlight mb-4 sm:mb-6 max-w-2xl mx-auto px-4">
+                        We specialize in providing customized industrial solutions tailored to your specific requirements. 
+                        Contact us for a free consultation.
+                    </p>
+                    <a href="#contact" 
+                       class="inline-flex items-center space-x-2 bg-accent hover:bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-xl text-sm sm:text-base">
+                        <!-- <i class="fas fa-phone"></i> -->
+                        <span>Get a Free Consultation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+            <div class="text-center mb-10 sm:mb-12 lg:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-3 sm:mb-4">Contact Us</h2>
+                <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-accent to-blue-400 mx-auto mb-4 sm:mb-6"></div>
+                <p class="text-sm sm:text-base lg:text-lg text-textlight max-w-3xl mx-auto px-4">Get in touch with us for your industrial needs</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-6 sm:gap-8">
+                <!-- Contact Information -->
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark mb-2">Phone</h3>
+                                <p class="text-sm sm:text-base text-textlight mb-1">
+                                    <a href="tel:+919460476041" class="hover:text-accent transition-colors">+91-9460476041</a>
+                                </p>
+                                <p class="text-sm sm:text-base text-textlight">
+                                    <a href="tel:+918690406041" class="hover:text-accent transition-colors">+91-8690406041</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark mb-2">Email</h3>
+                                <p class="text-sm sm:text-base text-textlight mb-1 break-words">
+                                    <a href="mailto:techsure2020@gmail.com" class="hover:text-accent transition-colors">
+                                        techsure2020@gmail.com
+                                    </a>
+                                </p>
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark mb-2">Office Address</h3>
+                                <p class="text-sm sm:text-base text-textlight mb-1">S-85, Block-4, Ambe Market</p>
+                                <p class="text-sm sm:text-base text-textlight">Chittorgarh, Rajasthan – 312001</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Small Map -->
+                    <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="p-3 sm:p-4">
+                            <h3 class="text-lg sm:text-xl font-bold text-dark mb-3 sm:mb-4">Our Location</h3>
+                            <div class="h-48 sm:h-56 lg:h-64 rounded-lg overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5396723766584!2d74.62719!3d24.88012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzQ4LjQiTiA3NMKwMzcnMzcuOSJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-primary rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark mb-4 sm:mb-6">Send us a Message</h3>
+                    
+                    <form id="contact-form" class="space-y-4 sm:space-y-6">
+                        <div>
+                            <label for="name" class="block text-dark font-medium mb-2 text-sm sm:text-base">Full Name *</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="name" 
+                                   required 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your full name">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-dark font-medium mb-2 text-sm sm:text-base">Email Address *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   required 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your email address">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-dark font-medium mb-2 text-sm sm:text-base">Phone Number *</label>
+                            <input type="tel" 
+                                   id="phone" 
+                                   name="phone" 
+                                   required 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-dark font-medium mb-2 text-sm sm:text-base">Company Name</label>
+                            <input type="text" 
+                                   id="company" 
+                                   name="company" 
+                                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 text-sm sm:text-base"
+                                   placeholder="Enter your company name">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-dark font-medium mb-2 text-sm sm:text-base">Message *</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      rows="4" 
+                                      required 
+                                      class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-300 resize-none text-sm sm:text-base"
+                                      placeholder="Enter your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-accent hover:bg-blue-600 text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-lg transition-all duration-300 hover:shadow-xl flex items-center justify-center space-x-2 text-sm sm:text-base">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                        
+                        <div id="form-message" class="hidden p-3 sm:p-4 rounded-lg text-center text-sm sm:text-base"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+@push('scripts')
+<script src="{{ asset('js/services.js') }}"></script>
+@endpush
+@endsection
